@@ -18,3 +18,16 @@ jobs:
       - name: dit bye
         run: echo "good bye"
 
+  second-job:
+    needs: prenier-job
+  #  on précise le système d'exploitation (runner)
+    runs-on: ubuntu-latest
+
+    # on écrit ici les étapes de notre action
+    steps:
+      - name: Dit bonjour
+        run: echo "Hello World"
+
+      - name: dit bye
+        run: echo "good bye"
+
