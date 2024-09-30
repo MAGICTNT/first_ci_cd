@@ -19,7 +19,7 @@ jobs:
         run: echo "good bye"
 
   second-job:
-    need: prenier-job
+    needs: prenier-job
   #  on précise le système d'exploitation (runner)
     runs-on: ubuntu-latest
 
